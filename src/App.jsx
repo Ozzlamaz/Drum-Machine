@@ -86,8 +86,10 @@ function App() {
             return <button key={id} onClick={()=>{play(id, button)}} id={button} className='drum-pad'><audio className='clip' id={id} src={source}></audio>{id}</button>
           })}
         </div>
-        <div>
+        <div className='controls'>
+          <h1 className='title'>Drum Machine</h1>
           <div id="display">hello</div>
+          <h3 className='author'>by Ahmad Osman</h3>
         </div>
       </div>
     </>
