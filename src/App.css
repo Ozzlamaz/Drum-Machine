@@ -10,7 +10,7 @@
   display: grid;
   grid-template: 75px 75px 75px / 150px 150px 150px;
   gap: 20px 20px;;
-  padding: 50px;
+  padding: 30px;
 }
 
 .drum-pad {
@@ -54,4 +54,15 @@
 
 .title, .author {
   color:#f3bc77
+}
+
+@media only screen and (max-width: 897px) {
+  #drum-machine {
+    flex-direction: column-reverse;
+  }
+
+  .controls {
+    height: 200px;
+    margin: 20px 0 0 0;
+  }
 }
